@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+  dynamodb-local:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: dynamodb-local
+    ports:
+      - "8001:8000"
+    volumes:
+      - "dynamo-local:/home/dynamodblocal/db"
+    working_dir: /home/dynamodblocal
+
+volumes:
+  dynamo-local:
+    driver: local
