@@ -1,0 +1,6 @@
+{
+    "id":{"S":"B2"},
+    "type":{"S":"basic"},
+    "title":{"S":"Mock B2"},
+    "description":{"S":"Description B2"}
+}
